@@ -167,12 +167,12 @@ var AuthHttp = (function () {
     AuthHttp.prototype.options = function (url, options) {
         return this.requestHelper({ body: '', method: http_1.RequestMethod.Options, url: url }, options);
     };
+    AuthHttp = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [AuthConfig, http_1.Http, http_1.RequestOptions])
+    ], AuthHttp);
     return AuthHttp;
 }());
-AuthHttp = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [AuthConfig, http_1.Http, http_1.RequestOptions])
-], AuthHttp);
 exports.AuthHttp = AuthHttp;
 /**
  * Helper class to decode and find JWT expiration.
