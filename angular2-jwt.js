@@ -28,7 +28,7 @@ require("rxjs/add/operator/mergeMap");
 /**
  * Sets up the authentication configuration.
  */
-var AuthConfig = (function () {
+var AuthConfig = /** @class */ (function () {
     function AuthConfig(config) {
         if (config === void 0) { config = {}; }
         var _this = this;
@@ -62,7 +62,7 @@ var AuthConfig = (function () {
     return AuthConfig;
 }());
 exports.AuthConfig = AuthConfig;
-var AuthHttpError = (function (_super) {
+var AuthHttpError = /** @class */ (function (_super) {
     __extends(AuthHttpError, _super);
     function AuthHttpError() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -73,7 +73,7 @@ exports.AuthHttpError = AuthHttpError;
 /**
  * Allows for explicit authenticated HTTP requests.
  */
-var AuthHttp = (function () {
+var AuthHttp = /** @class */ (function () {
     function AuthHttp(options, http, defOpts) {
         var _this = this;
         this.http = http;
@@ -177,7 +177,7 @@ exports.AuthHttp = AuthHttp;
 /**
  * Helper class to decode and find JWT expiration.
  */
-var JwtHelper = (function () {
+var JwtHelper = /** @class */ (function () {
     function JwtHelper() {
     }
     JwtHelper.prototype.urlBase64Decode = function (str) {
